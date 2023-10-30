@@ -5,7 +5,8 @@ import User from '../interface/user.interface'
 const auth = (req:Request | any, res:Response, next:NextFunction) => {
         req.user = {
            userId:"123",
-           username:"hebrus"
+           username:"hebrus",
+           message: "i fucking intercepted"
         }  
         next()
 
